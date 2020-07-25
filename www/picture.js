@@ -42,7 +42,7 @@ function startup() {
         ev.preventDefault();
     }, false);
 
-    clearphoto();
+    // clearphoto();
 }
 
 function clearphoto() {
@@ -62,11 +62,19 @@ function takepicture() {
         context.drawImage(video, 0, 0, width, height);
 
         var data = canvas.toDataURL('image/png');
-        photo.setAttribute('src', data);
+        // photo.setAttribute('src', data);
 
-        $.post( 'http://localhost:4567/save', { picture: data } )
+        $.post( '/save',
+            {
+                picture: data,
+                pic_type: $( "#pic_type" ).val(),
+                etage: $( "#etage" ).val(),
+                porte: $( "#porte" ).val(),
+                etagere: $( "#etagere" ).val()
+            }
+        )
     } else {
-        clearphoto();
+        // clearphoto();
     }
 }
 
