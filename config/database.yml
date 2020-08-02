@@ -23,6 +23,3 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
-
-
-6e5ecdf8e1f71b3b958fad5ac166a82875d688c81c4f874d31b887b167d827021968e875b5023222a5c6c8d3c828af076ab3d3a7c5e5ba6845393b91f1756b45
