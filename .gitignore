@@ -68,3 +68,6 @@ yarn-debug.log*
 .yarn-integrity
 
 log/*
+
+*.sqlite3
+public/pictures

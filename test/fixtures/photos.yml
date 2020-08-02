@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pic_path: MyString
+  pic_localization: MyString
+
+two:
+  pic_path: MyString
+  pic_localization: MyString

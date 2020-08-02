@@ -64,7 +64,7 @@ function takepicture() {
         var data = canvas.toDataURL('image/png');
         // photo.setAttribute('src', data);
 
-        $.post( '/save',
+        $.post( '/photos',
             {
                 picture: data,
                 pic_type: $( "#pic_type" ).val(),
